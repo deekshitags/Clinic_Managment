@@ -1,0 +1,125 @@
+{% extends "base_layout.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid" style="background-color: white;">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: green;">
+                    <div class="card-body">
+                        <h4>PATIENTS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'patients' %}">See Patients Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: green;">
+                    <div class="card-body">
+                        <h4>HEALTH HISTORIES</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'health_histories' %}">See Health Histories</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: green;">
+                    <div class="card-body">
+                        <h4>PATIENTS VISITS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'visits' %}">See Patients Visits</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="row">
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: red;">
+                    <div class="card-body">
+                        <h4>PRESCRIPTIONS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'prescriptions' %}">See Prescriptions Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: red;">
+                    <div class="card-body">
+                        <h4>CLINIC STAFF</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'staff' %}">See Staff Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: red;">
+                    <div class="card-body">
+                        <h4>SUPPLIERS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'suppliers' %}">See Suppliers Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: orange;">
+                    <div class="card-body">
+                        <h4>FEEDBACKS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'feedbacks' %}">See Feedbacks</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: orange;">
+                    <div class="card-body">
+                        <h4>DRUG RECORDS </h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'drugs' %}">See Drug Records</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 mt-5">
+                <div class="card text-white mb-4" style="background-color: orange;">
+                    <div class="card-body">
+                        <h4>APPOINTMENTS</h4>
+                        </div>
+                    <div class="card-footer d-flex align-items-center justify-content-between">
+                        <a class="small text-white btn btn-primary stretched-link" href="{% url 'appointments' %}">See Appointments Details</a>
+                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="footer mt-auto py-2" style="background-color: black;">
+  <div class="container">
+      <code>
+          <h5 class="text-center text-white">****  Clinic Management System  ****</h5>
+      </code>
+
+  </div>
+</footer>
+    </div>
+
+{% endblock content %}
